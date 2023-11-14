@@ -13,7 +13,7 @@ window.addEventListener("DOMContentLoaded", () => {
   const movePosition = slidesToScroll * itemWidth;
 
 
-  //1 узнаем ширину   
+   
   items.forEach((item) => {
     item.style.minWidth = `${itemWidth}px`;
   });
@@ -52,7 +52,7 @@ window.addEventListener("DOMContentLoaded", () => {
   const salebtnNext = document.querySelector('.sale__btn-next');
   const saleitems = document.querySelectorAll('.sale__slide-item');
   const saleitemsCount = saleitems.length;
-  const saleitemWidth = salecontainer.clientWidth / saleslidesToShow; // 1 узнаем ширину элемента
+  const saleitemWidth = salecontainer.clientWidth / saleslidesToShow;
   const salemovePosition = saleslidesToScroll * saleitemWidth;
 
 
@@ -85,3 +85,7 @@ window.addEventListener("DOMContentLoaded", () => {
   };
   salecheckBtns();
 });
+
+
+// Modal /Popup
+
