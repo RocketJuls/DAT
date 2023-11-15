@@ -1431,13 +1431,14 @@
 
 .modal {
   position: fixed;
-
+  z-index: 10050;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   overflow: hidden;
   background: rgba(0, 0, 0, 0.70);
+  display: none;
 
 
   &__dialog {
@@ -1462,9 +1463,11 @@
   &__close::after {
     transform: rotate(-45deg);
   }
+
   &__close::before {
     transform: rotate(45deg);
-}
+  }
+
   &__close::before,
   &__close::after {
     content: "";
