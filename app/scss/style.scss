@@ -1439,11 +1439,11 @@
   overflow: hidden;
   background: rgba(0, 0, 0, 0.70);
   display: none;
-
+  padding: 0 20px;
 
   &__dialog {
     max-width: 1110px;
-    margin: 253px auto;
+    margin: 160px auto;
 
   }
 
@@ -1453,8 +1453,8 @@
     cursor: pointer;
     width: 30px;
     height: 30px;
-    right: -40px;
-    top: -50px;
+    right: 0;
+    top: -40px;
     border: none;
     background-color: transparent;
 
@@ -1484,6 +1484,8 @@
     width: 100%;
     padding: 50px 70px;
     background-image: url(../images/basketbg.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
     border-radius: 20px;
 
 
@@ -1494,12 +1496,15 @@
     font-family: Montserrat;
     font-size: 45px;
     font-weight: 700;
-    text-align: center;
     position: relative;
     margin-bottom: 31px;
     padding-bottom: 39px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.10);
+
+    margin: 0 auto;
+    text-align: center;
+    max-width: 516px;
   }
+
 
   &__title::before {
     position: absolute;
@@ -1528,6 +1533,8 @@
     font-size: 25px;
     font-weight: 700;
     margin-bottom: 20px;
+    border-top: 1px solid rgba(0, 0, 0, 0.10);
+    padding-top: 20px;
   }
 
   &__wrapper {
@@ -1541,7 +1548,7 @@
 
   &__inner-content {
     display: flex;
-    width: 640px;
+    width: 100%;
     justify-content: space-between;
     margin-left: 30px;
 
@@ -1570,6 +1577,7 @@
     font-size: 14px;
     font-weight: 700;
     margin-top: 26px;
+    color: #000;
   }
 
   &__content-produce-name {
@@ -1582,7 +1590,7 @@
   }
 
   &__inner-right-content {
-    width: 260px;
+    max-width: 260px;
   }
 
   &__btn-list {
@@ -1618,7 +1626,11 @@
     margin-top: 19px;
   }
 
-
+  &__quantity-title {
+    color: #000;
+    font-size: 16px;
+    font-weight: 700;
+  }
 
   &__quantity-counter {
     display: flex;
@@ -1698,5 +1710,118 @@
 
   to {
     opacity: 1
+  }
+}
+
+@media (max-width:939px) {
+  .modal {
+    padding: 0 20px;
+  }
+
+  .modal__inner-content {
+    display: block;
+  }
+
+  .modal__btn-list {
+    padding-bottom: 20px;
+  }
+
+  .modal__content {
+    padding: 25px 20px;
+
+  }
+}
+
+@media (max-width:657px) {
+  .modal__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .modal__inner-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 0;
+  }
+
+  .modal__title {
+    font-size: 30px;
+    padding-bottom: 20px;
+  }
+
+  .modal__inner-right-content {
+    margin-top: 20px;
+  }
+
+  .modal__title-descr {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .modal__inner-right-content {
+    margin-top: 20px;
+  }
+
+  .modal__btn-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+  .modal__btn-shopping {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width:374px) {
+  .modal__title {
+    font-size: 22px;
+    padding-bottom: 5px;
+  }
+
+  .modal__title-descr {
+    font-size: 16px;
+    text-align: center;
+    line-height: 1.2;
+    padding-top: 10px;
+  }
+
+  .modal__inner-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    margin: 0 auto;
+  }
+
+  .modal__content-img {
+    max-width: 204px;
+    padding: 16px 63px;
+  }
+
+  .modal__content-price {
+    font-size: 16px;
+    margin-top: 8px;
+  }
+
+  .modal__content-produce {
+    margin-top: 6px;
+  }
+
+  .modal__volume-nav {
+    width: 226px;
+  }
+
+  .modal__quantity {
+    justify-content: space-around;
+  }
+  .modal__btn-shopping, .modal__btn-order {
+    padding: 9px 14px 13px 7px;
+    width: 226px;
+
   }
 }
