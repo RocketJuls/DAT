@@ -233,11 +233,15 @@
 
     border-radius: 20px;
     border: 1px solid #1E6140;
-    width: 199px;
+    width: 211px;
     height: 40px;
     padding-top: 10px;
     padding-bottom: 10px;
-    padding-left: 10px;
+    padding-left: 14px;
+  }
+
+  &__menu-link span {
+    margin-left: 10px;
   }
 
   &__menu-link:hover path {
