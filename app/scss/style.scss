@@ -1424,10 +1424,14 @@
   margin-right: 30px;
 }
 
+
+
+
 // Modal
 
 .modal {
   position: fixed;
+
   top: 0;
   left: 0;
   width: 100%;
@@ -1450,8 +1454,27 @@
     height: 30px;
     right: -40px;
     top: -50px;
+    border: none;
+    background-color: transparent;
+
   }
 
+  &__close::after {
+    transform: rotate(-45deg);
+  }
+  &__close::before {
+    transform: rotate(45deg);
+}
+  &__close::before,
+  &__close::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 2px;
+    width: 30px;
+    height: 3px;
+    background-color: rgba(255, 255, 255, 0.60);
+  }
 
   &__content {
     position: relative;
@@ -1646,21 +1669,11 @@
     color: #FFF;
 
   }
+
 }
 
 
 
-
-
-
-
-
-
-.modal .btn {
-  display: block;
-  width: 280px;
-  margin: 0 auto
-}
 
 .show {
   display: block
