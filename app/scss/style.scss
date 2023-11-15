@@ -115,6 +115,33 @@
 
   &__contacts {
     display: flex;
+    width: 255px;
+    justify-content: space-evenly;
+    align-items: center;
+
+  }
+
+  &__contacts-link {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #8C3213;
+    border-radius: 50%;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__contacts-link:hover {
+    background-color: #8C3213;
+  }
+
+  &__contacts-link:hover path {
+    fill: white;
+  }
+
+  &__phone-info {
+    display: flex;
     flex-direction: column;
   }
 
@@ -133,16 +160,6 @@
     background-image: url("../images/arrow-down-sign-to-navigate\ \(10\)\ 8.svg");
   }
 
-  &__phone::before {
-    position: absolute;
-    content: "";
-    width: 40px;
-    height: 40px;
-    background-image: url('../images/phone.avif');
-    border-radius: 50px solid #8C3213;
-    left: -47px;
-    top: 3px;
-  }
 
   &__callback {
     border: none;
@@ -162,6 +179,26 @@
     margin-left: 10px;
     margin-right: 5px;
     box-shadow: none;
+  }
+
+  &__link {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #8C3213;
+    border-radius: 50%;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__link:hover {
+    background-color: #8C3213;
+  }
+
+  &__link:hover path {
+    fill: white;
+
   }
 }
 
@@ -187,16 +224,13 @@
   &__menu-link {
     text-transform: uppercase;
     font-weight: 600;
-    font-size: 14px;
+    font-size: 13px;
     color: #000;
     line-height: 1;
     padding-left: 9px;
-  }
-
-  &__menu-item {
     display: flex;
     align-items: center;
-    justify-content: center;
+
     border-radius: 20px;
     border: 1px solid #1E6140;
     width: 199px;
@@ -206,7 +240,10 @@
     padding-left: 10px;
   }
 
-  &__menu-item:hover,
+  &__menu-link:hover path {
+    fill: #F8F8F8;
+  }
+
   &__menu-link:hover {
     background-color: #84BE51;
     color: #FFF;
@@ -820,13 +857,45 @@
     margin-bottom: 15px;
   }
 
+  &__contacts-info {
+    display: flex;
+    flex-direction: column;
+
+  }
+
   &__contacts {
+    display: flex;
+
+    align-items: center;
+
+  }
+
+  &__contacts-link {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #8C3213;
+    border-radius: 50%;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+  }
+
+  &__contacts-link:hover {
+    background-color: #8C3213;
+  }
+
+  &__contacts-link:hover path {
+    fill: #fff;
+  }
+
+  &__phone-info {
     display: flex;
     flex-direction: column;
   }
 
-  &__phone,
-  &__email {
+  &__phone {
     color: #000;
     position: relative;
   }
@@ -837,20 +906,10 @@
     width: 12px;
     height: 11px;
     top: 9px;
-    right: 81px;
+    right: 0;
     background-image: url("../images/arrow-down-sign-to-navigate\ \(10\)\ 8.svg");
   }
 
-  &__phone::before {
-    position: absolute;
-    content: "";
-    width: 40px;
-    height: 40px;
-    background-image: url('../images/phone.avif');
-    border-radius: 50px solid #8C3213;
-    left: -47px;
-    top: 3px;
-  }
 
   &__callback {
     border: none;
@@ -859,18 +918,41 @@
     color: #84BE51;
     border-bottom: 2px solid #84BE51;
     line-height: 15px;
-    margin-bottom: 32px;
   }
 
-  &__email::before {
-    position: absolute;
-    content: '';
+  &__email-info {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+
+  }
+
+  &__email-info a {
+    color: #000;
+  }
+
+  &__email-link {
     width: 40px;
     height: 40px;
-    background-image: url(../images/email.svg);
-    left: -47px;
-    top: -6px;
+    border: 1px solid #8C3213;
+    border-radius: 50%;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+
   }
+
+  &__email-link:hover {
+    background-color: #8C3213;
+
+  }
+
+  &__email-link:hover path {
+    fill: white;
+  }
+
 
   &__copyright {
     text-align: center;
