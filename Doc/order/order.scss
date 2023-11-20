@@ -1,0 +1,236 @@
+
+// ORDER
+
+.order {
+  margin-top: 53px;
+  margin-bottom: 27px;
+
+  &__content {
+    margin-bottom: 116px;
+
+  }
+
+  &__breadcrumbs {
+    display: flex;
+    margin-top: 46px;
+    justify-content: space-between;
+    max-width: 483px;
+    margin: 0 auto;
+  }
+
+  &__breadcrumbs-item {
+    color: rgba(0, 0, 0, 0.50);
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  &__breadcrumbs-item-active {
+    color: rgba(0, 0, 0, 0.50);
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  &__title {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 45px;
+    font-weight: 700;
+    text-align: center;
+    position: relative;
+    margin-bottom: 37px;
+    margin-top: 33px;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+
+  &__title-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  &__form-box {
+    max-width: 540px;
+  }
+
+  &__contact-form::placeholder {
+    color: #484848;
+  }
+
+  &__contact-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px 30px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.20);
+    padding-bottom: 31px;
+    padding-top: 15px;
+  }
+
+  &__contact-form input {
+    border-radius: 90px;
+    border: 1px solid rgba(0, 0, 0, 0.20);
+    background: #FFF;
+    width: 255px;
+    padding: 10px 19px;
+    position: relative;
+
+  }
+
+  &__contact-form input::after {
+    position: absolute;
+    content: "";
+    background-image: url(../images/arroworange.svg);
+    width: 12px;
+    height: 12px;
+  }
+
+  &__contact-form textarea {
+    width: 100%;
+    resize: none;
+    border-radius: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.20);
+    background: #FFF;
+    padding-top: 10px;
+    padding-left: 19px;
+  }
+
+  &__adress {
+    padding-top: 31px;
+  }
+
+  &__adress-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px 30px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.20);
+    padding-bottom: 31px;
+    padding-top: 15px;
+  }
+
+  &__adress-input {
+    border-radius: 90px;
+    border: 1px solid rgba(0, 0, 0, 0.20);
+    background: #FFF;
+    width: 255px;
+    padding: 10px 19px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+
+  &__adress-input input {
+    border: none;
+  }
+
+  &__payment {
+    padding-top: 26px;
+  }
+
+  &__payment h2 {
+    margin-bottom: 10px;
+  }
+
+  &__filter-option label {
+    position: relative;
+    cursor: pointer;
+    padding-left: 27px;
+  }
+
+  &__filter-input-radio:checked {
+    color: #EC6523;
+  }
+
+  &__filter-input-radio:hover+label,
+  &__filter-input-radio:focus+label {
+    color: #EC6523;
+  }
+
+  &__filter-input-radio+label::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 1px solid #EC6523;
+  }
+
+  &__filter-input-radio:checked+label::after {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: #EC6523;
+  }
+
+  &__basket-product {
+    border-radius: 20px;
+    background: #FFF;
+    padding: 26px 28px 29px 30px;
+    margin-left: 30px;
+  }
+
+  &__product-content {
+    margin-right: 20px;
+  }
+
+  &__products-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+
+  &__products-item img {
+    border-radius: 20px;
+    background: #FFF;
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.15);
+    padding: 11px 37px;
+    margin-right: 20px;
+  }
+
+  &__product-price span {
+    margin-left: 20px;
+  }
+
+  &__product-price {
+    color: #84BE51;
+    font-weight: 700;
+  }
+
+  &__total {
+    border-radius: 20px;
+    background: #21603F;
+    padding: 24px 29px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__total p {
+    color: #FFF
+  }
+
+  &__total span {
+    color: #84C551;
+  }
+
+  &__confirm-btn {
+    width: 100%;
+  }
+}

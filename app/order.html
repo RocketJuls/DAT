@@ -40,7 +40,7 @@
 
 
   <main class="main">
-    <section class="banner">
+    <section class="order__page">
       <div class="nav-header">
         <div class="container">
           <div class="nav-header__wrapper">
@@ -219,7 +219,8 @@
             </div>
           </div>
         </section>
-        <section>
+        
+        <section class="order__content">
 
           <div class="container">
 
@@ -239,61 +240,108 @@
                 <div class="order__adress">
                   <h2>Delivery</h2>
                   <form class="order__adress-form" action="">
-                    <input type="text" placeholder="Region">
-                    <input type="text" placeholder="City">
-                    <input type="text" placeholder="Department">
-                    <input type="text" placeholder="ZIP Code">
+                    <div class="order__adress-input"> <input type="text" placeholder="Region">
+                      <svg width="12" height="12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M6 9.42a.838.838 0 01-.594-.246l-5.16-5.16a.84.84 0 111.189-1.188L6 7.392l4.565-4.566a.84.84 0 011.189 1.189l-5.16 5.16A.838.838 0 016 9.42z"
+                          fill="#E74E13" />
+                      </svg>
+                    </div>
+                    <div class="order__adress-input"> <input type="text" placeholder="City">
+                      <svg width="12" height="12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M6 9.42a.838.838 0 01-.594-.246l-5.16-5.16a.84.84 0 111.189-1.188L6 7.392l4.565-4.566a.84.84 0 011.189 1.189l-5.16 5.16A.838.838 0 016 9.42z"
+                          fill="#E74E13" />
+                      </svg>
+                    </div>
+                    <div class="order__adress-input"> <input type="text" placeholder="Department">
+                      <svg width="12" height="12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M6 9.42a.838.838 0 01-.594-.246l-5.16-5.16a.84.84 0 111.189-1.188L6 7.392l4.565-4.566a.84.84 0 011.189 1.189l-5.16 5.16A.838.838 0 016 9.42z"
+                          fill="#E74E13" />
+                      </svg>
+                    </div>
+                     <input class="order__adress-input" type="text" placeholder="ZIP Code">
+                   
                   </form>
                 </div>
 
-              <div class="order__payment">
-                <h2>Payment</h2>
-                <ul>
-                  <li class="order__filter-option order__filter-radio">
-                    <input class="visually-hidden order__filter-input-radio order__filter-input" type="radio"
-                      name="cash" id="filter-cash" checked>
-                    <label for="filter-cash">
-                      Cash</label>
-                  </li>
-                  <li class="order__filter-option order__filter-radio">
-                    <input class="visually-hidden order__filter-input-radio order__filter-input" type="radio"
-                      name="cash" id="filter-card">
-                    <label for="filter-card">Payment by card</label>
-                  </li>
-                  <li class="order__filter-option order__filter-radio">
-                    <input class="visually-hidden order__filter-input-radio order__filter-input" type="radio"
-                      name="cash" id="filter-cardonline">
-                    <label for="filter-cardonline">
-                      Payment by card online</label>
-                  </li>
-                </ul>
-              </div>
+                <div class="order__payment">
+                  <h2>Payment</h2>
+                  <ul>
+                    <li class="order__filter-option order__filter-radio">
+                      <input class="visually-hidden order__filter-input-radio order__filter-input" type="radio"
+                        name="cash" id="filter-cash" checked>
+                      <label for="filter-cash">
+                        Cash</label>
+                    </li>
+                    <li class="order__filter-option order__filter-radio">
+                      <input class="visually-hidden order__filter-input-radio order__filter-input" type="radio"
+                        name="cash" id="filter-card">
+                      <label for="filter-card">Payment by card</label>
+                    </li>
+                    <li class="order__filter-option order__filter-radio">
+                      <input class="visually-hidden order__filter-input-radio order__filter-input" type="radio"
+                        name="cash" id="filter-cardonline">
+                      <label for="filter-cardonline">
+                        Payment by card online</label>
+                    </li>
+                  </ul>
+                </div>
               </div>
               <div class="order__basket-product">
-                <h2>
-                  Products in the basket</h2>
+                <h3>
+                  Products in the basket</h3>
                 <ul class="order__products-list">
-                  <li><img src="./images/orderimg.avif" alt="">
+                  <li class="order__products-item"><img src="./images/orderimg.avif" alt="">
                     <div class="order__product-content">
                       <p class="order__product-name">
                         Kommand® herbicide, FMS UKRAINE
                       </p>
-                      <p class="order__product-price">100 $</p>
-                      <span>x1</span>
+                      <p class="order__product-price">100 $ <span>x1</span></p>
+
                     </div>
-                    <img src="./images/cancel.svg" alt="">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                      <g clip-path="url(#clip0_84_4015)">
+                        <path
+                          d="M7.32166 5.99998L11.8083 1.51315C11.9317 1.38964 11.9998 1.22485 12 1.04915C12 0.873342 11.9319 0.708367 11.8083 0.585049L11.4151 0.191976C11.2915 0.0681711 11.1267 0.000366211 10.9508 0.000366211C10.7752 0.000366211 10.6104 0.0681711 10.4868 0.191976L6.0002 4.67851L1.51337 0.191976C1.38995 0.0681711 1.22507 0.000366211 1.04927 0.000366211C0.873659 0.000366211 0.70878 0.0681711 0.585366 0.191976L0.192 0.585049C-0.064 0.841049 -0.064 1.25744 0.192 1.51315L4.67873 5.99998L0.192 10.4866C0.0684878 10.6103 0.000487805 10.7751 0.000487805 10.9508C0.000487805 11.1265 0.0684878 11.2913 0.192 11.4149L0.585268 11.808C0.708683 11.9317 0.873658 11.9996 1.04917 11.9996C1.22498 11.9996 1.38985 11.9317 1.51327 11.808L6.0001 7.32134L10.4867 11.808C10.6103 11.9317 10.7751 11.9996 10.9507 11.9996H10.9509C11.1266 11.9996 11.2914 11.9317 11.415 11.808L11.8082 11.4149C11.9316 11.2914 11.9997 11.1265 11.9997 10.9508C11.9997 10.7751 11.9316 10.6103 11.8082 10.4867L7.32166 5.99998Z"
+                          fill="black" fill-opacity="0.5" />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_84_4015">
+                          <rect width="12" height="12" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
                   </li>
-                  <li><img src="./images/orderimg.avif" alt="">
+                  <li class="order__products-item"><img src="./images/orderimg.avif" alt="">
                     <div class="order__product-content">
                       <p class="order__product-name">
                         Kommand® herbicide, FMS UKRAINE
                       </p>
-                      <p class="order__product-price">100 $</p>
-                      <span>x1</span>
+                      <p class="order__product-price">100 $ <span>x1</span></p>
+
                     </div>
-                    <img src="./images/cancel.svg" alt="">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                      <g clip-path="url(#clip0_84_4015)">
+                        <path
+                          d="M7.32166 5.99998L11.8083 1.51315C11.9317 1.38964 11.9998 1.22485 12 1.04915C12 0.873342 11.9319 0.708367 11.8083 0.585049L11.4151 0.191976C11.2915 0.0681711 11.1267 0.000366211 10.9508 0.000366211C10.7752 0.000366211 10.6104 0.0681711 10.4868 0.191976L6.0002 4.67851L1.51337 0.191976C1.38995 0.0681711 1.22507 0.000366211 1.04927 0.000366211C0.873659 0.000366211 0.70878 0.0681711 0.585366 0.191976L0.192 0.585049C-0.064 0.841049 -0.064 1.25744 0.192 1.51315L4.67873 5.99998L0.192 10.4866C0.0684878 10.6103 0.000487805 10.7751 0.000487805 10.9508C0.000487805 11.1265 0.0684878 11.2913 0.192 11.4149L0.585268 11.808C0.708683 11.9317 0.873658 11.9996 1.04917 11.9996C1.22498 11.9996 1.38985 11.9317 1.51327 11.808L6.0001 7.32134L10.4867 11.808C10.6103 11.9317 10.7751 11.9996 10.9507 11.9996H10.9509C11.1266 11.9996 11.2914 11.9317 11.415 11.808L11.8082 11.4149C11.9316 11.2914 11.9997 11.1265 11.9997 10.9508C11.9997 10.7751 11.9316 10.6103 11.8082 10.4867L7.32166 5.99998Z"
+                          fill="black" fill-opacity="0.5" />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_84_4015">
+                          <rect width="12" height="12" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
                   </li>
                 </ul>
+
+                <div class="order__total">
+                  <p>Total: <span>2 products</span></p>
+                  <p>In the amount: <span> 15 $</span></p>
+                </div>
+                <button class="order__confirm-btn btn">Confirm the order</button>
               </div>
             </div>
           </div>
