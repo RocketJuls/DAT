@@ -82,7 +82,7 @@
                     </clipPath>
                   </defs>
                 </svg></a>
-              <a class="nav-header__link" href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+              <a data-modal class="nav-header__link" href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                   viewBox="0 0 16 16" fill="none">
                   <g clip-path="url(#clip0_102_9558)">
                     <path
@@ -346,6 +346,82 @@
       <div class="footer__arrow"><img class="footer__arrow-img" src="./images/footerarrow.svg" alt=""></div>
     </div>
   </footer>
+  <div class="modal">
+    <div class="modal__dialog">
+      <div class="modal__content">
+        <button data-close type="button" class="modal__close">
+
+        </button>
+        <div class="modal__title-wrapper">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="25" viewBox="0 0 32 25" fill="none">
+            <path
+              d="M31.957 0.00718358C31.8473 -0.00239453 31.7369 -0.00239453 31.6272 0.00718358H23.2067H18.1218C13.3429 0.180678 9.7507 1.36623 7.34528 3.56382C7.23059 3.66502 7.12064 3.76621 7.0155 3.87706C5.6325 5.27629 4.65714 7.03172 4.1959 8.95178L0 25H13.859C18.6157 24.8265 22.1967 23.6506 24.6022 21.4723C24.7169 21.3711 24.8267 21.265 24.9367 21.159C26.3415 19.7575 27.3339 17.991 27.804 16.0554L32 0.00718358H31.957ZM19.503 13.9012C19.2219 14.9994 18.6485 15.9993 17.8447 16.7927C17.7348 16.8988 17.6201 17.0048 17.5006 17.106L17.2999 17.265C16.3645 17.9829 15.2418 18.41 14.0693 18.494H10.4611L12.4635 11.1108C12.7385 10.0165 13.3016 9.01743 14.0932 8.21924C14.2031 8.11321 14.3178 8.00718 14.4373 7.90597L14.6666 7.71804C15.602 7.00016 16.7247 6.57304 17.8972 6.4891H21.5101L19.503 13.9012Z"
+              fill="#84C551" />
+          </svg>
+          <h2 class="modal__title">Basket</h2>
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="25" viewBox="0 0 32 25" fill="none">
+            <path
+              d="M0.0429955 0.00718358C0.152706 -0.00239453 0.263063 -0.00239453 0.372774 0.00718358H8.79333H13.8782C18.6571 0.180678 22.2493 1.36623 24.6547 3.56382C24.7694 3.66502 24.8794 3.76621 24.9845 3.87706C26.3675 5.27629 27.3429 7.03172 27.8041 8.95178L32 25H18.141C13.3843 24.8265 9.80326 23.6506 7.39784 21.4723C7.28315 21.3711 7.17326 21.265 7.06334 21.159C5.65855 19.7575 4.66608 17.991 4.19596 16.0554L0 0.00718358H0.0429955ZM12.497 13.9012C12.7781 14.9994 13.3515 15.9993 14.1553 16.7927C14.2652 16.8988 14.3799 17.0048 14.4994 17.106L14.7001 17.265C15.6355 17.9829 16.7582 18.41 17.9307 18.494H21.5389L19.5365 11.1108C19.2615 10.0165 18.6984 9.01743 17.9068 8.21924C17.7969 8.11321 17.6822 8.00718 17.5627 7.90597L17.3334 7.71804C16.398 7.00016 15.2753 6.57304 14.1028 6.4891H10.4899L12.497 13.9012Z"
+              fill="#84C551" />
+          </svg>
+        </div>
+        <p class="modal__title-descr">Kommand® herbicide, FMS UKRAINE</p>
+        <div class="modal__wrapper">
+          <img class="modal__content-img" src="./images/basketimg.avif" alt="">
+          <div class="modal__inner-content">
+
+            <div class="modal__content-info">
+              <p class="modal__content-price">7814,63 usd</p>
+              <p class="modal__content-price-descr">Price for 5 l</p>
+              <p class="modal__content-produce">Producer</p>
+              <div class="modal__content-produce-name">
+                <img class="modal__content-produce-img" src="./images/produceimg.svg" alt="">
+                <p class="modal__content-produce-descr">
+                  FMS of Ukraine</p>
+              </div>
+            </div>
+
+
+            <div class="modal__inner-right-content">
+              <div class="modal__volume-nav">
+                <p class="modal__volume-name">Canister 5 l</p>
+                <button class="modal__volume-nav-btn"><img src="./images/basketnavigation.svg" width: 12px; height:
+                    12px; alt="">
+                </button>
+              </div>
+              <div class="modal__quantity">
+                <p class="modal__quantity-title">Quantity</p>
+                <div class="modal__quantity-counter">
+                  <img class="modal__quantity-minus" src="./images/minus.svg" alt="">
+                  <p class="modal__quantity-num">1</p>
+                  <img class="modal__quantity-plus" src="./images/plus.svg" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal__btn-list">
+          <a href="catalog2.html" class="modal__btn-shopping"><svg width="16" height="17" fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M15.908 4.343a.513.513 0 00-.4-.22l-9.924-.427a.512.512 0 10-.044 1.026l9.253.398-1.82 5.677H4.877L3.414 2.833a.513.513 0 00-.317-.385L.701 1.506a.514.514 0 00-.375.956l2.13.837 1.488 8.104c.045.244.258.42.505.42h.247l-.564 1.567a.427.427 0 00.403.572h.395a1.531 1.531 0 00-.395 1.027 1.54 1.54 0 003.08 0c0-.395-.15-.754-.395-1.027h3.357a1.53 1.53 0 00-.395 1.027 1.54 1.54 0 003.08 0c0-.395-.15-.754-.395-1.027h.48a.428.428 0 100-.855H5.145l.462-1.284h7.742c.223 0 .42-.144.488-.356l2.14-6.674a.512.512 0 00-.068-.45zm-9.833 11.33a.685.685 0 11.001-1.37.685.685 0 01-.001 1.37zm5.647 0a.685.685 0 11.001-1.37.685.685 0 01-.001 1.37z" />
+            </svg>
+            <span>Continue shopping</span></a>
+          <a href="order.html" class="modal__btn-order"><svg width="20" height="21" fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg">
+              <g>
+                <path
+                  d="M15.856 2.62h-1.81v-.81c0-.261-.285-.38-.547-.38h-1.405C11.761.478 10.928.002 9.975.002A2.166 2.166 0 007.856 1.43h-1.38c-.262 0-.524.119-.524.38v.81h-1.81a2.024 2.024 0 00-2 1.929V18.19c0 1.047.953 1.809 2 1.809h11.714c1.047 0 2-.762 2-1.81V4.55a2.024 2.024 0 00-2-1.929zm-8.952-.238h1.31a.524.524 0 00.452-.428A1.38 1.38 0 019.976.882a1.357 1.357 0 011.285 1.072c.043.234.238.41.476.428h1.357v1.905h-6.19V2.382zm10 15.809c0 .523-.524.857-1.048.857H4.142c-.523 0-1.047-.334-1.047-.857V4.549a1.07 1.07 0 011.047-.976h1.81v1.214a.5.5 0 00.524.452h7.023a.524.524 0 00.547-.452V3.573h1.81c.547.01.999.43 1.047.976V18.19z" />
+                <path
+                  d="M8.165 10.644a.476.476 0 00-.666-.024l-1.524 1.452-.643-.667a.476.476 0 00-.666-.023.5.5 0 000 .69l.976 1a.428.428 0 00.333.143.476.476 0 00.333-.143l1.857-1.762a.452.452 0 000-.666zm6.834 1.023H9.523a.476.476 0 100 .953h5.476a.476.476 0 000-.953zM8.165 6.834a.476.476 0 00-.666-.023L5.975 8.263l-.643-.667a.476.476 0 00-.666-.024.5.5 0 000 .69l.976 1a.428.428 0 00.333.144.476.476 0 00.333-.143L8.165 7.5a.452.452 0 000-.667zm6.834 1.024H9.523a.476.476 0 100 .952h5.476a.476.476 0 100-.952zm-6.834 6.595a.476.476 0 00-.666-.024l-1.524 1.452-.643-.666a.476.476 0 00-.666-.024.5.5 0 000 .69l.976 1a.428.428 0 00.333.143.476.476 0 00.333-.143l1.857-1.762a.452.452 0 000-.666zm6.834 1.024H9.523a.476.476 0 100 .952h5.476a.476.476 0 000-.952z" />
+              </g>
+            </svg>
+            <span>Make an order</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
   </div>
   <script src="js/main.min.js"></script>
 </body>
