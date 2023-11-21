@@ -1,0 +1,33 @@
+@media (max-width:710px) {
+  .thanks__title {
+    font-size: 32px;
+
+
+  }
+
+  .thanks__descr {
+    font-size: 16px;
+  }
+}
+
+
+@media (max-width:639px){
+  .thanks__title{
+    text-align: center;
+    line-height: 1.2;
+  }
+  .thanks__btn-list{
+    flex-direction: column;
+    width: 100%;
+   
+}
+
+.continue-btn{
+  margin-right: 0;
+  margin-bottom: 15px;
+}
+.return-btn{
+  margin-left:0;
+}
+
+}

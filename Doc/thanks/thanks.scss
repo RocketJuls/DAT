@@ -1,0 +1,69 @@
+// Thanks
+
+.thanks {
+  background-image: url(../images/thanksbg.avif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 624px;
+  margin-top: 50px;
+
+  &__content-wrapper {
+display: flex;
+    justify-content: center;
+    padding-top: 208px;
+    padding-bottom: 195px;
+
+
+  }
+
+ 
+
+
+&__title-wrapper {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+}
+
+&__title {
+  font-size: 45px;
+  font-weight: 700;
+  color: #FFF;
+  margin-bottom: 24px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+&__descr {
+  font-size: 20px;
+  color: #FFF;
+  margin-bottom: 46px;
+  text-align: center;
+
+
+}
+
+&__btn-list {
+  display: flex;
+  justify-content: space-between;
+}
+}
+.continue-btn{
+  margin-right: 10px;
+}
+.return-btn{
+  margin-left: 10px;
+}
+.continue-btn,
+.return-btn {
+  border: 1px solid #E74E13;
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.15);
+}
+
+.continue-btn:hover,
+.return-btn:hover {
+  background-color: transparent;
+  border: 1px solid #FFF;
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.15);
+  transition: all .5s ease;
+}
