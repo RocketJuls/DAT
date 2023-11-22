@@ -1,0 +1,28 @@
+@media(max-width:660px) {
+  .pay__maintitle {
+    font-size: 36px;
+  }
+}
+
+@media(max-width:968px) {
+  .pay__delivery-item {
+    flex-direction: column;
+  }
+
+  .pay__delivery-content-nova {
+    order: -1;
+    margin-top: 20px;
+  }
+
+  .pay__delivery-item-content {
+    width: 100%;
+  }
+
+
+}
+
+@media (max-width: 566px) {
+  .pay__maintitle {
+    font-size: 26px;
+  }
+}

@@ -1,0 +1,72 @@
+// AboutUS
+
+.aboutus {
+  margin-top: 28px;
+  margin-bottom: 110px;
+
+
+  &__breadcrumbs {
+    display: flex;
+    margin-top: 46px;
+    justify-content: space-evenly;
+    max-width: 483px;
+    margin: 0 auto;
+  }
+
+  &__breadcrumbs-item {
+    color: rgba(0, 0, 0, 0.50);
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  &__breadcrumbs-item-active {
+    color: rgba(0, 0, 0, 0.50);
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  &__title {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 45px;
+    font-weight: 700;
+    text-align: center;
+    position: relative;
+    margin-bottom: 37px;
+    margin-top: 33px;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+
+  &__title-wrapper {
+    justify-content: center;
+    display: flex;
+    align-items: baseline;
+  }
+
+  &__text {
+    color: rgba(0, 0, 0, 0.50);
+    margin-bottom: 20px;
+  }
+
+  &__text b,
+  &__list-name {
+    color: #1E6140;
+    font-weight: 700;
+  }
+
+  &__list-wrapper {
+    margin-top: 30px;
+    margin-left: 20px;
+  }
+
+  &__list {
+    list-style: disc;
+
+  }
+
+  &__item {
+    color: rgba(0, 0, 0, 0.50);
+    text-decoration: dotted;
+  }
+}
