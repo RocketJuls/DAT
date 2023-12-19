@@ -1,0 +1,180 @@
+
+// CONTACTS
+.contacts {
+  margin-top: 53px;
+  margin-bottom: 80px;
+
+  &__content {
+    margin-bottom: 116px;
+
+  }
+
+  &__breadcrumbs {
+    display: flex;
+    margin-top: 46px;
+    justify-content: space-between;
+    max-width: 199px;
+    margin: 0 auto;
+  }
+
+  &__breadcrumbs-item {
+    color: rgba(0, 0, 0, 0.50);
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  &__breadcrumbs-item-active {
+    color: rgba(0, 0, 0, 0.50);
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  &__title {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 45px;
+    font-weight: 700;
+    text-align: center;
+    position: relative;
+    margin-bottom: 37px;
+    margin-top: 33px;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+
+  &__title-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__adress {
+    margin-top: 29px;
+    margin-bottom: 108px;
+    border-radius: 20px;
+    background: #FFF;
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.15);
+    padding: 40px;
+  }
+
+  &__adress-list {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.10);
+  }
+
+  &__adress-item {
+    display: flex;
+    align-items: center;
+    padding-bottom: 40px;
+  }
+
+  &__adress-item p,
+  &__adress-item a {
+    margin-left: 10px;
+  }
+
+  &__adress-title {
+    padding-top: 27px;
+    color: #1E6140;
+    font-weight: 700;
+  }
+
+  &__phone-list {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+  }
+
+  &__phone-item {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+
+  }
+
+  &__phone-item p {
+    margin-left: 10px;
+  }
+
+  &__form-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  &__form-title {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 45px;
+    font-weight: 700;
+    text-align: center;
+    position: relative;
+    margin-bottom: 37px;
+    margin-top: 33px;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+
+  &__form-content {
+    max-width: 641px;
+    margin: 0 auto;
+  }
+
+  &__form-descr {
+    text-align: center;
+  }
+
+  &__form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px 30px;
+    padding-bottom: 31px;
+    padding-top: 15px;
+    max-width: 540px;
+    margin: 0 auto;
+
+  }
+
+  &__form input {
+    border-radius: 90px;
+    border: 1px solid rgba(0, 0, 0, 0.20);
+    background: #FFF;
+    width: 255px;
+    padding: 10px 19px;
+    position: relative;
+  }
+
+  &__form textarea {
+    width: 100%;
+    resize: none;
+    border-radius: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.20);
+    background: #FFF;
+    padding-top: 10px;
+    padding-left: 19px;
+  }
+
+  &__btn {
+    background-color: transparent;
+    color: #E74E13;
+    font-weight: 700;
+    border-radius: 90px;
+    border: 1px solid #E74E13;
+    padding: 12px 37px 13px 21px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+  }
+
+  &__btn:hover {
+    cursor: pointer;
+    border: 1px solid #E74E13;
+    background: #E74E13;
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.15);
+    color: #FFF;
+    transition: all .5s ease;
+  }
+}

@@ -1,0 +1,26 @@
+@media(max-width:930px) {
+
+  .contacts__adress-list,
+  .contacts__phone-list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contacts__form {
+    flex-direction: column;
+  }
+
+  .contacts__form input {
+    width: 100%;
+  }
+}
+
+@media(max-width:506px) {
+  .contacts__form-title {
+    font-size: 36px;
+  }
+
+  .contacts__adress {
+    margin-bottom: 38px;
+  }
+}

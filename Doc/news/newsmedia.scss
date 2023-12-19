@@ -1,0 +1,36 @@
+// MEDIA NEWS
+@media(max-width:1147px) {
+  .news__list {
+    justify-content: center;
+  }
+
+}
+
+@media(max-width:530px){
+  .news__wrapper{
+    margin-bottom: 0;
+  }
+  .news__catalog-item {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  
+  .news__catalog-tablist {
+    width: 295px;
+    margin-top: 50px;
+  }
+  
+  .news__btn-arrow-prev {
+    margin-right: 14px;
+  }
+  
+  .news__btn-arrow-next {
+    margin-left: 14px;
+  }
+  
+  .tab--three {
+    display: none;
+  }
+  
+}
+

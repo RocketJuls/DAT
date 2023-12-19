@@ -1,0 +1,136 @@
+//REGISTRATION
+.registration {
+  margin-top: 53px;
+  margin-bottom: 80px;
+  background-image: url(../images/aboutbg.avif);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__content {
+    margin-bottom: 116px;
+
+  }
+
+  &__breadcrumbs {
+    display: flex;
+    margin-top: 46px;
+    justify-content: space-between;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  &__breadcrumbs-item {
+    color: rgba(0, 0, 0, 0.50);
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  &__breadcrumbs-item-active {
+    color: rgba(0, 0, 0, 0.50);
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  &__title {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 45px;
+    font-weight: 700;
+    text-align: center;
+    position: relative;
+    margin-bottom: 37px;
+    margin-top: 33px;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+
+  &__title-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__form {
+    max-width: 540px;
+    margin: 0 auto;
+    margin-top: 21px;
+    position: relative;
+  }
+
+  &__form-name {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+
+  }
+
+  &__form-name input {
+    max-width: 255px;
+  }
+
+  &__form-name input,
+  &__form input {
+    margin-bottom: 20px;
+    border-radius: 90px;
+    border: 1px solid rgba(0, 0, 0, 0.20);
+    background: #FFF;
+    padding: 10px 19px;
+  }
+
+  &__form input {
+    width: 100%;
+  }
+
+  &__form-btn {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  &__filter-input-checkbox label {
+    display: none;
+  }
+
+}
+
+.registration____filter-checkbox {
+  padding-left: 27px;
+}
+
+.registration__filter-option label {
+  position: relative;
+  cursor: pointer;
+  padding-left: 27px;
+}
+
+.registration__filter-input-checkbox:checked {
+  color: #84BE51;
+}
+
+.registration__filter-input-checkbox:hover+label,
+.registration__filter-input-checkbox:focus+label {
+  color: green;
+  transition: all .5s ease;
+}
+
+.registration__filter-input-checkbox+label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 72px;
+  width: 16px;
+  height: 16px;
+  border-radius: 3px;
+  border: 1px solid #84BE51;
+}
+
+.registration__filter-input-checkbox:checked+label::after {
+  content: "";
+  position: absolute;
+  bottom: 68px;
+  left: -3px;
+  width: 29px;
+  height: 29px;
+  background-image: url(../images/Checkbox.svg);
+
+}

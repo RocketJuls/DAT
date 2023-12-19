@@ -1,5 +1,44 @@
 'use strict'
 window.addEventListener("DOMContentLoaded", () => {
+
+
+  const menuBtn = document.querySelector('.top-header__burger');
+  const menuMobile = document.querySelector('.top-header__burger-menu-wrapper');
+  const menuClose = document.querySelector('.top-header__burger-menu-close');
+
+
+  menuBtn.addEventListener('click', () => {
+    if (!menuMobile.classList.contains('menu--open')) {
+      menuMobile.classList.add('menu--open');
+    } else { menuMobile.classList.remove('menu--open'); }
+
+
+  });
+  //  menuClose.addEventListener('click', () => {
+  //    menuMobile.classList.remove('menu--open');
+  //  });
+
+
+
+  menuClose.addEventListener('click', () => {
+    if (menuMobile.classList.contains('menu--open')) {
+      menuMobile.classList.remove('menu--open');
+    } else { menuMobile.classList.add('menu--open'); }
+
+  });
+
+
+
+
+
+
+
+
+
+
+
+
+
   let position = 0;
   const slidesToShow = 4;
   const slidesToScroll = 2;
